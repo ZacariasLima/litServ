@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Meus Apps
-    'coments',
+    'livraria',
 ]
 
 MIDDLEWARE = [
