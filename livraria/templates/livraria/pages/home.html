@@ -2,15 +2,22 @@
 
 <body>
     {% include 'livraria/partials/header.html' %}
+    {% include 'livraria/partials/search.html'%}
 
-    <div class="search-container">
-        <div class="container">
-            <form action="" class="search-form">
-                <input type="search" class="search-input" name="search">
-                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
-            </form>
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% include 'livraria/partials/book.html' %}
+            {% include 'livraria/partials/book.html' %}
+            {% include 'livraria/partials/book.html' %}
+            {% include 'livraria/partials/book.html' %}
+            {% include 'livraria/partials/book.html' %}
+            {% include 'livraria/partials/book.html' %}
+            {% include 'livraria/partials/book.html' %}
         </div>
-    </div>
+    </main>
+
+    {% include 'livraria/partials/footer.html' %}
+
 </body>
 
 </html>
