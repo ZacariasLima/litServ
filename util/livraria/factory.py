@@ -18,7 +18,9 @@ def make_book():
         'title': fake.sentence(nb_words=6),
         'description': fake.sentence(nb_words=12),
         'pages': fake.random_number(digits=2, fix_len=True),
+        'pages_unit': 'Páginas',
         'chapters': fake.random_number(digits=2, fix_len=True),
+        'chapters_unit': 'Capítulos',
         'resume': fake.text(3000),
         'created_at': fake.date_time(),
         'author': {
