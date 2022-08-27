@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    {% include 'livraria/partials/head.html' %}
+    <title>{% block 'title' %}{% endblock 'title' %} | Livraria</title>
+</head>
+
+<body>
+    {% include 'livraria/partials/header.html' %}
+    {% include 'livraria/partials/search.html'%}
+
+    <main class="main-content-container">
+        {% block 'content' %}{% endblock 'content' %}
+    </main>
+
+    {% include 'livraria/partials/footer.html' %}
+</body>
+
+</html>

@@ -1,17 +1,9 @@
-{% include 'livraria/partials/head.html' %}
+{% extends 'global/base.html' %}
 
-<body>
-    {% include 'livraria/partials/header.html' %}
-    {% include 'livraria/partials/search.html'%}
+{% block 'title' %}Books{% endblock 'title' %}
 
-    <main class="main-content-container">
-        <div class="main-content main-content-detail container">
-            {% include 'livraria/partials/book.html' %}
-        </div>
-    </main>
-
-    {% include 'livraria/partials/footer.html' %}
-
-</body>
-
-</html>
+{% block 'content' %}
+    <div class="main-content main-content-detail container">
+        {% include 'livraria/partials/book.html' %}
+    </div>
+{% endblock 'content' %}
